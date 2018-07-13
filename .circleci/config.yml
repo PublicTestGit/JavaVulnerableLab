@@ -39,7 +39,6 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}
         
       # run tests!
-      - run: gradle test
       - run: bash <(curl -s -L https://github.com/whitesource/fs-agent-distribution/raw/master/standAlone/wss_agent.sh) -apiKey 9ddde6ba71a94f58a76b658e46544a89bf0d1866461d4bbcae244be27a494c87 -project JavaVulnerableLab -d ~/ 
 
 
